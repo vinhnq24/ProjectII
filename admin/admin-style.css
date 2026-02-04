@@ -1,0 +1,42 @@
+/* Style riêng cho admin */
+.admin-dashboard {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin: 40px 0 20px 0;
+}
+.dashboard-card {
+    background: #fffbe9;
+    border:2px solid #ffe066;
+    border-radius: 10px;
+    padding: 30px 46px 18px 46px;
+    text-align:center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.dashboard-card h2 { margin-bottom: 8px; font-size: 1.2rem;}
+.dashboard-card p { font-size: 2.4rem; font-weight:bold; color:#be6c08; margin:0;}
+.admin-table {
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    border-collapse: collapse;
+    margin: 32px 0 24px 0;
+    font-size: 1.1rem;
+}
+.admin-table th, .admin-table td {
+    padding: 10px 8px;
+    border: 1px solid #f3e6b2;
+    vertical-align: middle;
+    text-align:center;
+}
+.admin-table th {
+    background: #fffbe9;
+    font-weight: bold;
+}
+.admin-table tbody tr:nth-child(even) {
+    background: #fff8e1;
+}
+.admin-table button.btn-small {margin:2px 2px;}
+@media (max-width: 1000px) { .admin-dashboard{ gap:10px;} }
+@media (max-width: 600px) { .admin-dashboard {flex-direction: column;gap:16px;} .admin-table{font-size:1rem;} }

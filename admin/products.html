@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm - Fashion Shop Admin</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Admin Panel</a>
+            <ul class="menu">
+                <li><a href="products.html">Quản lý sản phẩm</a></li>
+                <li><a href="orders.html">Quản lý đơn hàng</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Danh sách sản phẩm</h1>
+        <button class="btn" onclick="alert('Mockup: Hiện popup thêm sản phẩm!')">+ Thêm sản phẩm</button>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Loại</th>
+                    <th>Chức năng</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../assets/shirt.png" alt="Áo sơ mi" width="56"></td>
+                    <td>Áo sơ mi nam</td>
+                    <td>350.000đ</td>
+                    <td>Áo</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Sửa')">Sửa</button> <button class="btn-small" onclick="alert('Mockup: Xóa')">Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/skirt.png" alt="Váy nữ" width="56"></td>
+                    <td>Chân váy nữ</td>
+                    <td>270.000đ</td>
+                    <td>Váy</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Sửa')">Sửa</button> <button class="btn-small" onclick="alert('Mockup: Xóa')">Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/tshirt.png" alt="Áo thun" width="56"></td>
+                    <td>Áo thun Unisex</td>
+                    <td>199.000đ</td>
+                    <td>Áo</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Sửa')">Sửa</button> <button class="btn-small" onclick="alert('Mockup: Xóa')">Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/jeans.png" alt="Quần jeans" width="56"></td>
+                    <td>Quần jeans unisex</td>
+                    <td>499.000đ</td>
+                    <td>Quần</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Sửa')">Sửa</button> <button class="btn-small" onclick="alert('Mockup: Xóa')">Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/dress.png" alt="Đầm nữ" width="56"></td>
+                    <td>Đầm nữ dự tiệc</td>
+                    <td>699.000đ</td>
+                    <td>Váy</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Sửa')">Sửa</button> <button class="btn-small" onclick="alert('Mockup: Xóa')">Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/jacket.png" alt="Áo khoác" width="56"></td>
+                    <td>Áo khoác da nam</td>
+                    <td>850.000đ</td>
+                    <td>Áo khoác</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Sửa')">Sửa</button> <button class="btn-small" onclick="alert('Mockup: Xóa')">Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/shorts.png" alt="Quần short" width="56"></td>
+                    <td>Quần short nam</td>
+                    <td>220.000đ</td>
+                    <td>Quần</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Sửa')">Sửa</button> <button class="btn-small" onclick="alert('Mockup: Xóa')">Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/sweater.png" alt="Áo len" width="56"></td>
+                    <td>Áo len nữ cổ lọ</td>
+                    <td>380.000đ</td>
+                    <td>Áo</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Sửa')">Sửa</button> <button class="btn-small" onclick="alert('Mockup: Xóa')">Xóa</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2026 Fashion Shop Admin. All rights reserved.</p>
+    </footer>
+    <script src="admin-script.js"></script>
+</body>
+</html>

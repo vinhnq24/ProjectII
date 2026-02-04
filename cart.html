@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Fashion Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Fashion Shop</a>
+            <ul class="menu">
+                <li><a href="shop.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="login.html">Tài khoản</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Giỏ hàng của bạn</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Size</th>
+                    <th>Màu</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                    <th>Thành tiền</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sản phẩm trong giỏ sẽ render bằng JS hoặc viết tĩnh ví dụ -->
+                <tr>
+                    <td>Áo sơ mi nam</td>
+                    <td>M</td>
+                    <td>Trắng</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>350.000đ</td>
+                    <td>350.000đ</td>
+                    <td><button class="btn-small">Xóa</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-actions">
+            <a href="checkout.html" class="btn">Tiến hành thanh toán</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Fashion Shop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

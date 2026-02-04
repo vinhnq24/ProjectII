@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm - Fashion Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Fashion Shop</a>
+            <ul class="menu">
+                <li><a href="shop.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="login.html">Tài khoản</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Danh mục sản phẩm</h1>
+        <div class="filters">
+            <select id="filter-category">
+                <option value="all">Tất cả</option>
+                <option value="shirt">Áo</option>
+                <option value="skirt">Váy</option>
+                <option value="pants">Quần</option>
+            </select>
+            <select id="filter-price">
+                <option value="all">Mức giá</option>
+                <option value="1">Dưới 300k</option>
+                <option value="2">300k - 500k</option>
+                <option value="3">Trên 500k</option>
+            </select>
+            <input type="text" id="search-bar" placeholder="Tìm kiếm sản phẩm...">
+            <button class="btn-small">Tìm</button>
+        </div>
+        <div class="products">
+            <!-- Danh sách sản phẩm mẫu sẽ render bằng JS hoặc viết tĩnh -->
+            <div class="product-card">
+                <img src="assets/shirt.png" alt="Áo sơ mi nam">
+                <h3>Áo sơ mi nam</h3>
+                <p>350.000đ</p>
+                <a href="product.html" class="btn-small">Xem chi tiết</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/skirt.png" alt="Chân váy nữ">
+                <h3>Chân váy nữ</h3>
+                <p>270.000đ</p>
+                <a href="product.html" class="btn-small">Xem chi tiết</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/jeans.png" alt="Quần jeans unisex">
+                <h3>Quần jeans unisex</h3>
+                <p>499.000đ</p>
+                <a href="product.html" class="btn-small">Xem chi tiết</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/tshirt.png" alt="Áo thun Unisex">
+                <h3>Áo thun Unisex</h3>
+                <p>199.000đ</p>
+                <a href="product.html" class="btn-small">Xem chi tiết</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/dress.png" alt="Đầm nữ dự tiệc">
+                <h3>Đầm nữ dự tiệc</h3>
+                <p>699.000đ</p>
+                <a href="product.html" class="btn-small">Xem chi tiết</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/jacket.png" alt="Áo khoác da nam">
+                <h3>Áo khoác da nam</h3>
+                <p>850.000đ</p>
+                <a href="product.html" class="btn-small">Xem chi tiết</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/shorts.png" alt="Quần short nam">
+                <h3>Quần short nam</h3>
+                <p>220.000đ</p>
+                <a href="product.html" class="btn-small">Xem chi tiết</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/sweater.png" alt="Áo len nữ cổ lọ">
+                <h3>Áo len nữ cổ lọ</h3>
+                <p>380.000đ</p>
+                <a href="product.html" class="btn-small">Xem chi tiết</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Fashion Shop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

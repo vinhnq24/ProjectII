@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đơn hàng - Fashion Shop Admin</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Admin Panel</a>
+            <ul class="menu">
+                <li><a href="products.html">Quản lý sản phẩm</a></li>
+                <li><a href="orders.html">Quản lý đơn hàng</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Danh sách đơn hàng</h1>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID Đơn</th>
+                    <th>Khách hàng</th>
+                    <th>Sản phẩm</th>
+                    <th>Tổng tiền</th>
+                    <th>Trạng thái</th>
+                    <th>Cập nhật</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Áo sơ mi nam x1</td>
+                    <td>350.000đ</td>
+                    <td>Đang xử lý</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Duyệt đơn')">Duyệt</button></td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Trần Thị B</td>
+                    <td>Chân váy nữ x2</td>
+                    <td>540.000đ</td>
+                    <td>Đang giao</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Đã giao')">Đã giao</button></td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>Lê Văn C</td>
+                    <td>Quần jeans unisex x1</td>
+                    <td>499.000đ</td>
+                    <td>Hoàn tất</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Đã xong!')">Xong</button></td>
+                </tr>
+                <tr>
+                    <td>1004</td>
+                    <td>Phạm Thị D</td>
+                    <td>Đầm nữ dự tiệc x1</td>
+                    <td>699.000đ</td>
+                    <td>Đã hủy</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Không thực hiện!')">---</button></td>
+                </tr>
+                <tr>
+                    <td>1005</td>
+                    <td>Ngô Văn E</td>
+                    <td>Áo khoác da nam x1</td>
+                    <td>850.000đ</td>
+                    <td>Đang xử lý</td>
+                    <td><button class="btn-small" onclick="alert('Mockup: Duyệt đơn')">Duyệt</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2026 Fashion Shop Admin. All rights reserved.</p>
+    </footer>
+    <script src="admin-script.js"></script>
+</body>
+</html>
