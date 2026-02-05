@@ -19,11 +19,11 @@
     </header>
     <main>
         <div class="product-detail">
-            <img src="assets/shirt.png" alt="Áo sơ mi nam" class="detail-img">
+            <img id="productImage" src="" alt="" class="detail-img">
             <div class="info">
-                <h1>Áo sơ mi nam</h1>
-                <p class="price">350.000đ</p>
-                <p class="desc">Áo sơ mi nam chất liệu cotton, thoáng mát, phù hợp mọi phong cách.</p>
+                <h1 id="productName"></h1>
+                <p class="price" id="productPrice"></p>
+                <p class="desc" id="productDesc"></p>
                 <label for="size">Chọn size:</label>
                 <select id="size">
                     <option value="M">M</option>
@@ -43,6 +43,80 @@
     <footer>
         <p>&copy; 2026 Fashion Shop. All rights reserved.</p>
     </footer>
+    <script>
+        // Danh sách sản phẩm (id trùng với link ?id=1, ?id=2, ...)
+        var products = {
+            1: {
+                name: 'Áo sơ mi nam',
+                price: '350.000đ',
+                desc: 'Áo sơ mi nam chất liệu cotton, thoáng mát, phù hợp mọi phong cách.',
+                image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500'
+            },
+            2: {
+                name: 'Chân váy nữ',
+                price: '270.000đ',
+                desc: 'Chân váy nữ dáng A, nhiều màu sắc, dễ phối đồ.',
+                image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0ebaa?w=500'
+            },
+            3: {
+                name: 'Quần jeans unisex',
+                price: '499.000đ',
+                desc: 'Quần jeans form slim, co giãn tốt, bền đẹp.',
+                image: 'https://images.unsplash.com/photo-1541099649105-f69ad14f2e38?w=500'
+            },
+            4: {
+                name: 'Áo thun Unisex',
+                price: '199.000đ',
+                desc: 'Áo thun cotton 100%, thoáng mát, giá tốt.',
+                image: 'https://images.unsplash.com/photo-1521572163471-631354d0e11a?w=500'
+            },
+            5: {
+                name: 'Đầm nữ dự tiệc',
+                price: '699.000đ',
+                desc: 'Đầm nữ dự tiệc sang trọng, form dáng đẹp.',
+                image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500'
+            },
+            6: {
+                name: 'Áo khoác da nam',
+                price: '850.000đ',
+                desc: 'Áo khoác da nam cao cấp, phong cách.',
+                image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500'
+            },
+            7: {
+                name: 'Quần short nam',
+                price: '220.000đ',
+                desc: 'Quần short nam thể thao, thoải mái.',
+                image: 'https://images.unsplash.com/photo-1591195853828-11a59cc4c458?w=500'
+            },
+            8: {
+                name: 'Áo len nữ cổ lọ',
+                price: '380.000đ',
+                desc: 'Áo len nữ cổ lọ ấm áp, dễ mặc.',
+                image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500'
+            }
+        };
+
+        function getProductIdFromUrl() {
+            var params = new URLSearchParams(window.location.search);
+            var id = parseInt(params.get('id'), 10);
+            return (id >= 1 && id <= 8) ? id : 1;
+        }
+
+        function showProduct() {
+            var id = getProductIdFromUrl();
+            var p = products[id];
+            if (!p) p = products[1];
+
+            document.getElementById('productImage').src = p.image;
+            document.getElementById('productImage').alt = p.name;
+            document.getElementById('productName').textContent = p.name;
+            document.getElementById('productPrice').textContent = p.price;
+            document.getElementById('productDesc').textContent = p.desc;
+            document.title = p.name + ' - Fashion Shop';
+        }
+
+        showProduct();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
