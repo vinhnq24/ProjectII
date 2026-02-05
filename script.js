@@ -10,11 +10,14 @@ function buyNow() {
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-    // Search trên shop.html
+    // Search trên shop.html - chỉ bắt nút tìm kiếm (button), không phải các link "Xem chi tiết" (a tag)
     var searchBar = document.getElementById('search-bar');
     if(searchBar) {
-        document.querySelector('.btn-small').onclick = function() {
-            alert('Tính năng tìm kiếm mô phỏng – vui lòng triển khai backend để hiển thị kết quả thực!');
+        var searchBtn = document.querySelector('button.btn-small');
+        if(searchBtn) {
+            searchBtn.onclick = function() {
+                alert('Tính năng tìm kiếm mô phỏng – vui lòng triển khai backend để hiển thị kết quả thực!');
+            }
         }
     }
     // Đăng nhập/Đăng ký mockup
